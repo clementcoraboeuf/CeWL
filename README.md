@@ -42,6 +42,7 @@ The easiest way to install these gems is with Bundler:
 
 ```
 gem install bundler
+bundle config set --local path vendor/bundle
 bundle install
 ```
 
@@ -65,7 +66,7 @@ have encountered while running CeWL - https://digi.ninja/projects/cewl.php
 ## Usage
 
 ```
-./cewl.rb
+bundle exec ruby cewl.rb
 
 CeWL 5.5.2 (Grouping) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
 Usage: cewl [OPTIONS] ... <url>
